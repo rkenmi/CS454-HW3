@@ -77,24 +77,23 @@ FileApp.prototype.fact = function () {
         }
         else{
           if (flags.save && response.body.text){
-            if (!flags.saveData)
-              flags.saveData = {};
-            flags.saveData[type] = response.body.text;
+            if (!flags.data)
+              flags.data = {};
+            flags.data[type] = response.body.text;
           }
         }
         tasksCompleted++;
         if (tasksComplete()){
-          flags.saveData['saved'] = new Date();
-          writeData(flags.saveData);
+          flags.data['saved'] = new Date();
+          saveData(flags.data);
         }
       });
   }
 
-  function writeData(newObj) {
+  function saveData(newObj) {
     fs.readFile('facts.json', 'utf8', function(err, data) {
       if (err){
         // Create new save
-        //newData.push( JSON.stringify(obj, null, 4) );
         var newData = [];
         newData.push(newObj);
         fs.writeFile('facts.json', JSON.stringify(newData, null, 4), function (err){
@@ -106,15 +105,11 @@ FileApp.prototype.fact = function () {
         // Load save, append
         data = JSON.parse(data);
         data.push(newObj);
-        //console.log(typeof data);
-
 
         fs.writeFile('facts.json', JSON.stringify(data, null, 4), function (err){
           if (err) throw err;
           console.log('Appended to facts.json');
         });
-
-
       }
     });
   }
@@ -130,28 +125,4 @@ FileApp.prototype.fact = function () {
 
   for(var i = 1; i < 5; i++)
     fcns[i-1](i);
-  /*
-  fs.readFile('facts.json', 'utf8', function(err, data) {
-    if (err){
-      // Create new save
-      fs.writeFile('facts.json', response.body.text)
-    }
-    else{
-      // Load save, append
-
-    }
-  });
-  */
-}
-
-FileApp.prototype.save = function () {
-  fs.readFile('facts.json', 'utf8', function(err, data) {
-    if (err){
-      // Create new save
-    }
-    else{
-      // Load save, append
-
-    }
-  });
 }

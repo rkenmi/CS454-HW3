@@ -88,7 +88,8 @@ FileApp.prototype.fact = function () {
           console.log(flags.data);
           console.log('\n');
           if(flags.save){
-            flags.data['saved'] = new Date();
+            var date = new Date();
+            flags.data['saved'] = date.toString();
             saveData(flags.data);
           }
         }

@@ -38,5 +38,39 @@
     {
         "math": "1200 is a boring number.",
         "saved": "Mon Oct 12 2015 16:25:31 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "math": "1200 is an uninteresting number.",
+        "saved": "Mon Oct 12 2015 16:26:59 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "date": "April 5th is the day in 1951 that Ethel and Julius Rosenberg are sentenced to death for performing espionage for the Soviet Union.",
+        "math": "1200 is a boring number.",
+        "trivia": "300 is the number of bones humans are born with in their body.",
+        "saved": "Mon Oct 12 2015 16:27:14 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "math": "1200 is an uninteresting number.",
+        "date": "April 15th is the day in 1715 that Pocotaligo Massacre triggers the start of the Yamasee War in colonial South Carolina.",
+        "trivia": "300 is the number of bones humans are born with in their body.",
+        "saved": "Mon Oct 12 2015 16:27:30 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "math": "1200 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+        "trivia": "300 is the approximate number of Spartans who fought to death at the Battle of Thermopylae.",
+        "date": "April 15th is the day in 1923 that Insulin becomes generally available for use by people with diabetes.",
+        "saved": "Mon Oct 12 2015 16:29:11 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "trivia": "300 is the approximate number of Spartans who fought to death at the Battle of Thermopylae.",
+        "date": "April 15th is the day in 1979 that a disastrous earthquake (of M 7.1) occurs on Montenegro coast.",
+        "math": "1200 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+        "saved": "Mon Oct 12 2015 16:29:15 GMT-0700 (Pacific Daylight Time)"
+    },
+    {
+        "date": "January 10th is the day in 69 that Lucius Calpurnius Piso Licinianus is appointed by Galba to deputy Roman Emperor.",
+        "trivia": "300 is the approximate number of Spartans who fought to death at the Battle of Thermopylae.",
+        "math": "1200 is an unremarkable number.",
+        "saved": "Mon Oct 12 2015 16:29:24 GMT-0700 (Pacific Daylight Time)"
     }
 ]

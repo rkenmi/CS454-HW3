@@ -44,8 +44,9 @@ FileApp.prototype.fact = function () {
           type = 'date';
           if(flags[type] && typeof flags.date === 'string'){
             var tempStr = flags.date;
-            var month = tempStr.substring(0, 2);
-            var day = tempStr.substring(3, 5);
+            var arrStr = tempStr.split('/');
+            var month = arrStr[0];
+            var day = arrStr[1];
             url = 'http://numbersapi.com/' + month + '/' + day + '/' + 'date' + '?json';
           }
           break;

@@ -76,7 +76,7 @@ FileApp.prototype.fact = function () {
           throw err;
         }
         else{
-          if (flags.save && response.body.text){
+          if (response.body.text){
             if (!flags.data)
               flags.data = {};
             flags.data[type] = response.body.text;
@@ -84,11 +84,13 @@ FileApp.prototype.fact = function () {
         }
         tasksCompleted++;
         if (tasksComplete()){
-          flags.data['saved'] = new Date();
           console.log('\n');
           console.log(flags.data);
           console.log('\n');
-          saveData(flags.data);
+          if(flags.save){
+            flags.data['saved'] = new Date();
+            saveData(flags.data);
+          }
         }
       });
   }

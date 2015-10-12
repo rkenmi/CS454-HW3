@@ -10,7 +10,7 @@ module.exports.run = function(flags) {
 function FileApp(flags) {
   this.fcns = [];
   this.flags = flags;
-  console.log(this.flags);
+  //console.log(this.flags);
 }
 
 FileApp.prototype.init = function() {
@@ -85,6 +85,9 @@ FileApp.prototype.fact = function () {
         tasksCompleted++;
         if (tasksComplete()){
           flags.data['saved'] = new Date();
+          console.log('\n');
+          console.log(flags.data);
+          console.log('\n');
           saveData(flags.data);
         }
       });
